@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistemas Operativos: evolución de Windows y Linux</title>
+<style>
+:root{--bg:#d9e1e8;--win:#ffffff;--bar:#2f3e4e;--bar-t:#ffffff;--ink:#1c2733;--mute:#51606f;--acc:#2b6cb0;--line:#c3ced8;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141b22;--win:#1e2832;--bar:#0e141a;--ink:#e6ecf2;--mute:#9fb0bf;--acc:#6aa9e8;--line:#33414f}}
+:root[data-theme="dark"]{--bg:#141b22;--win:#1e2832;--bar:#0e141a;--ink:#e6ecf2;--mute:#9fb0bf;--acc:#6aa9e8;--line:#33414f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+.wrap{max-width:920px;margin:0 auto;padding:32px 16px 48px}
+h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;margin:0 0 12px;letter-spacing:-.02em}
+.lead{color:var(--mute);font-size:1.1rem;max-width:62ch;margin:0 0 28px}
+.window{background:var(--win);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 28px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.bar{background:var(--bar);color:var(--bar-t);padding:9px 14px;display:flex;align-items:center;gap:8px;font-size:.9rem}
+.bar i{width:11px;height:11px;border-radius:50%;background:#7f8c99;display:inline-block}
+.bar span{margin-left:8px}
+.body{padding:20px 20px 24px}
+.body h2{margin:0 0 8px;font-size:1.4rem}
+.body p{max-width:68ch;margin:0 0 12px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--acc)}
+.info{text-align:center}
+.info p{margin-left:auto;margin-right:auto}
+.info img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}
+footer{color:var(--mute);font-size:.9rem;text-align:center;margin-top:12px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Evolución de los sistemas operativos: Windows y Linux</h1>
+
+  <section class="window" id="que-es">
+    <div class="bar"><i></i><i></i><i></i><span>¿Qué es un sistema operativo?</span></div>
+    <div class="body">
+      <h2>Sistema y operativo: qué significa cada palabra</h2>
+      <div class="def">
+      <p>Para entender qué es un sistema operativo conviene separar las dos palabras. Un <strong>sistema</strong> es un conjunto de elementos relacionados entre sí que trabajan juntos con un fin determinado.</p>
+      <p>La palabra <strong>operativo</strong> indica que su fin es la operación o conducción del hardware, es decir, controlar y coordinar los componentes físicos de la computadora para que puedan utilizarse. Por eso, un sistema operativo es el conjunto de elementos relacionados cuyo fin es operar y conducir el hardware.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="window" id="windows">
+    <div class="bar"><i></i><i></i><i></i><span>Windows</span></div>
+    <div class="body info">
+      <p class="cap">Desde Windows 1.0 hasta Windows 11</p>
+      <img src="infografia-windows.png" alt="Infografía de la evolución de Windows: Windows 1.0 (1985), 3.0 (1990), 95 (1995), 98 (1998), XP (2001), Vista (2007), 7 (2009), 8 (2012), 10 (2015) y 11 (2021)">
+    </div>
+  </section>
+
+  <section class="window" id="linux">
+    <div class="bar"><i></i><i></i><i></i><span>Linux</span></div>
+    <div class="body info">
+      <p class="cap">Desde el primer núcleo de Linus Torvalds hasta las versiones más recientes.</p>
+      <img src="infografia-linux.png" alt="Infografía de la evolución de Linux: desde Linux 0.01 en 1991 hasta Linux 6.0 y 6.1 en 2022, con la licencia GPL, las primeras distribuciones, Ubuntu y Android">
+    </div>
+  </section>
+
+  <section class="window" id="comparacion">
+    <div class="bar"><i></i><i></i><i></i><span>Comparación rápida</span></div>
+    <div class="body">
+      <div class="scroll">
+      <table>
+        <tr><th></th><th>Windows</th><th>Linux</th></tr>
+        <tr><td>Creador</td><td>Microsoft</td><td>Linus Torvalds y una comunidad mundial</td></tr>
+        <tr><td>Primera versión</td><td>1985</td><td>1991</td></tr>
+        <tr><td>Licencia</td><td>Propietaria</td><td>Libre (GPL)</td></tr>
+        <tr><td>Uso común</td><td>Computadoras personales</td><td>Servidores, nube, supercomputadoras y Android</td></tr>
+      </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>Materia: Sistemas Operativos</footer>
+</main>
+</body>
+</html>
